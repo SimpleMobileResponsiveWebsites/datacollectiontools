@@ -1,11 +1,14 @@
-Amazon Product Scraper
-Overview
+Amazon Product Scraper Overview
+
 Amazon Product Scraper is a simple web application built with Streamlit for scraping product information from Amazon search results. The application allows users to input an Amazon search URL, and it extracts product titles, prices, and ratings, displaying them in a tabular format.
 
 Features
 Scrapes Product Data: Extracts product titles, prices, and ratings from Amazon search result pages.
+  
 User Interface: Built with Streamlit, providing a clean and interactive UI for users to input URLs and view results.
+  
 Educational Use: Designed for learning purposes to demonstrate web scraping techniques.
+
 Requirements
 Python 3.x
 Streamlit
@@ -46,7 +49,9 @@ Code Explanation
 scrape_amazon(url): This function takes an Amazon search URL, sends a request to it, and parses the HTML to extract product titles, prices, and ratings.
 
 Headers: Sets a user-agent and accept-language to mimic a real browser request.
+
 BeautifulSoup: Parses HTML content to locate and extract product information.
+  
 Streamlit UI:
 
 st.title: Displays the application title.
@@ -55,11 +60,12 @@ st.button: Initiates the scraping process when clicked.
 st.spinner: Shows a loading spinner during the scraping process.
 st.dataframe: Displays the scraped data in a tabular format.
 st.error: Displays an error message if no products are found.
+  
 Notes
 This application is intended for educational purposes only.
+  
 Respect Amazon's terms of service and robots.txt file when scraping their site.
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgements
 Streamlit for providing a simple and powerful tool for building web applications.
